@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfolio</a></div>
+            <ul class="menu">
+                <li><a href="#bio-title">About Me</a></li>
+                <li><a href="#contactme">Email</a></li>
+                <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://ca.linkedin.com/">Linkedin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero section and About Me box!-->
+    <section class="hero" id="about">
+        <div class="max-width">
+            <img src="Heroimage.jpg" alt="placeholder selfie" class="hero-img"/>
+            <article class="bio-animation">
+                <h2 id="bio-title" class="bio-title" >About Me!</h2>
+                <p class="bio-text">
+                Hello, My Name is Shanchai Zahid, An aspiring new Webdeveloper! I was always interested in programming and I finally took the first step in enrolling in the UofT Coding Bootcamp for the year 2022! I enjoy tinkering with machinery and it was only a matter of time before I try my hand at programming.
+                </p>
+            </article>
+        </div>
+    </section>
+    <!--More About Me section!-->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p> I am Research Coordinator and work with a variety of patients, medical/ research and support staff.</p>
+        <p> I got into programming due to an longstanding interest and I wanted to connect my patients with evolving technological aid to their outstanding conditions. </p>
+        <p> Since this is a continuous craft that requires trial and error, there is a lot of room to grow! Contact info down below!</p>
+      </section>
+
+    <!--My work project section-->
+    <section class="project" id="project">
+        <h2 class="project-title"> My Working Projects</h2>
+            <div class="projects-container">
+                <img src="project_placeholder_1.jpg" alt="project placeholder picture" class="project-picture"/>
+
+                <h3 class="project-title"> Working project 1</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                </p>
+                <a href="#" class="project-link">Link to project!</a>
+            </div>
+    </section>
+    <!--Contact information section start-->
+
+    <section class="contactinfo" id="contactme">
+        <h2 class> Contact me Here!</h2>
+            <div class="contact-container">
+                <form action="/action_page.php">
+                    <label for="fname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fname" value="Enter full name"><br>
+                    <label for="lname">Email:</label><br>
+                    <input type="text" id="email" name="email" value="Enter email here"><br><br>
+                    <input type="submit" value="Submit">
+                </form> 
+            </div>
+    </section>
+</body>
+</html>

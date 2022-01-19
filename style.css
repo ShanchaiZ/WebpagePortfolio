@@ -1,0 +1,201 @@
+/* *Universal element will be used through all the style in this .css file */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 68.75rem;
+  padding: 0 100px;
+  margin: auto;
+}
+
+/*navbar styles*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background: navy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+.navbar .menu li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+    margin-left: 10px;
+}
+
+/*Hero section styling*/
+.hero {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.hero .img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+/*About Me styling*/
+.bio {
+  max-width: 68.75rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px;
+  color: black;
+}
+
+bio h1 {
+  margin-bottom: 0rem;
+}
+
+bio p {
+  line-height:2 rem;
+  padding:0.3rem 0rem;
+}
+
+/*More about me styling*/
+.more-about {
+  background-color: wheat;
+  padding: 2rem;
+  width: 68.75rem;
+  display: flexbox;
+  align-items: center;  
+  justify-content: center;
+  gap: 2.5rem;
+  margin: auto;
+}
+
+.more-about h2 {
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.more-about p {
+  line-height: 2rem;
+  padding: 0.4rem;
+}
+
+/*Working project styling*/
+.project {
+  background-color: beige;
+  padding: 40px 0;
+  width: 68.75rem;
+  align-items: center;  
+  justify-content: center;
+  margin: auto;
+}
+
+.projects-container {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+.project-details {
+  align-content: center;
+  margin-bottom: 2.0rem;
+}
+
+/*contact info section styling*/
+.contactinfo {
+  background-color: lightblue;
+  padding: 40px 0;
+  width: 68.75rem;
+  align-items: center;  
+  justify-content: center;
+  margin: auto;
+}
+
+/*flexing screen annd responsiveness*/
+
+body, html {
+  height: 100%;
+  transition: margin-right 2s;
+  display: flexbox;
+  font-display: flex;
+  }
+
+body {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Media queries for tablet screens*/
+@media screen and (max-width:720px) {
+  .navbar{
+    padding: 1.5rem;
+    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+  }
+
+  .hero{
+    margin-top: 4rem;
+    flex-direction: column;
+    gap:0;
+  }
+
+  .hero img{
+    height: 37.5rem;
+    width: 36rem;
+  }
+  
+  .bio {
+    margin-top: -5rem;
+    width: 20rem;
+  }
+
+  .projects-container{
+    flex-direction: column;
+    width: 20rem;
+  }
+}
+
+/*media queries for phones*/
+@media screen and (max-width:420px) {
+  .hero img {
+    height: 37.5rem;
+    width: 20rem;
+  }
+
+  .bio {
+    width: 15rem;
+  }
+
+  .projects-container {
+    width: 15rem;
+  }
+
+  .contactinfo {
+    max-width: 15rem;
+  }
+  
+}
